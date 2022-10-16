@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ <meta charset="UTF-8">
+ <title>Page title</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Staatliches&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fredericka+the+Great&family=Staatliches&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a497a0fb12.js" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="style.css">
+<script src="app.js"></script>
+</head>
+<body>
+ <header>
+  <div class="item item1">
+   <img class="logo" src="https://i.ibb.co/mCnnvb8/logo.png" alt="logo" border="0">
+  <h1 class="tracking-in-expand"> MEENAH CAKES</h1>
+   
+  <button class="demo1" onclick="heartbeat()"><i class="fa-solid fa-podcast heartbeat"></i></button>
+  </div>
+  <div class="item item2">
+  <p>....delight in every bite.</p> 
+  
+  </div>
+ </header>
+ 
+ <main class="cakebody">
+ <p>Hi,<span id="datevaled"></span>.</p>
+ <p>At <b>Meenah Cakes</b>, we bake very delicious and tasty cakes and pastries for all occasions. Our variety of cakes includes sponge cakes, Red velvet, Chocolate cakes, cup cakes ,foil cakes and much more.</p> 
+ <section class="price">
+ <span>SELECT A FLAVOR</span>
+ <select id="cakes" onchange="getValue()">
+ <option value="Types">Types</option>
+ <option value="Chocolate">Chocolate</option>
+ <option value="Sponge">Sponge</option>
+ <option value="Red Velvet">Red Velvet</option>
+ <option value="Cupcakes">Cup Cakes</option>
+  <option value="Foil Cake">Foil cake</option>
+ </select>
+ <img id="cakescreen">
+ <p id="pricedisplay"></p>
+ </section>
+ <p>What makes us stand out amongst others is our creativity and commitment to quality. Our cakes are exquisitely decorated and our sole aim is to fulfil your dreams no matter how farfetched they may seem.</p>
+ <p>We specialized in creating delicious cakes using fresh ingredients and bringing out their finest to our dessert selection. All cakes are made in-house by our team of talented bakers and we only use the freshest and finest ingredients in all our cakes and pastries. Each cake and pastry is handcrafted the moment you order. Our handcrafted cakes are delicious works of edible art! And we would like that experience being shared to you and your guests.</p>
+ <p> We deliver within <b>Lagos</b> and <b>City of Ojuelegba</b> in <b>Ijebu-Ode.</b></p>
+<p>Find A Great Selection Of Exceptional Gifts Everyone Will Love For All Occasions.</p>
+ <p><b>SHOP NOW!!!</b></p>
+<img class="workspace" src="https://i.ibb.co/BjfZXG0/Meenah.jpg" alt="Meenah" border="0">
+
+<section class="faqs">
+<details>
+<summary><b>FAQs</b></summary>
+<h4 class="heading">FREQUENTLY ASKED QUESTIONS ABOUT OUR CAKES</h4>
+<ol>
+<details>
+<summary><b>When are your delivery time slots?</b></summary>
+<div>
+<p>Upon checking out, you can choose the time slots 9-12pm, 12-3pm, 3-6pm.</p>
+</div>
+</details>
+
+<details>
+<summary><b>What happens if I need my cake at a specific timing?</b></summary>
+<div>
+<p>If you need it in a narrower time range, we can deliver in a 1 hour frame between 9-6pm at an additional #3000</p>
+</div>
+</details>
+
+<details>
+<summary><b>How much do you charge for your door-to-door delivery service?</b></summary>
+<div>
+<p>If your order falls below #15,000 , there are a few options for you:</p>
+<p><b>FLEXI DELIVERY</b> - #2000 (We will come anytime between 9-630pm),</p>
+<p><b>REGULAR DELIVERY</b> - #3500 (We will come between your preferred 3 hour range between 9am-6pm),</p>
+<p><b>FLAT RATE</b>- #5000 Specific timing delivery (any 1 hour range between 9am to 6pm)</p>
+ <p><b>NOTE:</b> If your delivery address is to a hotel, chalet or office building, we send to the nearest car pick up/drop off area and our delivery person will call prior to delivery.</p>
+</div>
+</details>
+
+<details>
+<summary><b>What happens if cake is delivered but nobody’s home?</b></summary>
+<div>For any failed delivery, we will contact the receiver to see if we can make other arrangements, eg. leave with guard or neighbour. If all else fails, we will make arrangements to do a second delivery attempt at additional #1500 or arrange for self collection.</div>
+</details>
+
+<details>
+<summary><b>Where can I self-collect the cake? Where are you located?</b></summary>
+<div>
+<p>Our complete address:
+<address>
+6,Peace Street,
+Igbe-Laara,
+Ikorodu,
+Lagos State.
+</address>
+</p>
+</div>
+</details>
+
+</ol>
+</details>
+</section>
+ </main>
+ 
+ <nav>
+<a href="index.html" ><i class="fa-solid fa-house-user"></i></a>
+<a href="gallery.html"><i class="fa-solid fa-images"></i></a>
+<a href="contactus.html"><i class="fa-solid fa-address-card"></i></a>
+ </nav>
+
+ <footer class="cakebody">
+ <div class="footer-icon">
+ <p>FOLLOW MEENAH CAKES ON SOCIAL MEDIA</p>
+ <br>
+ <a href="https://instagram.com/meenah_delight_cakes?igshid=YmMyMTA2M2Y=" ><i class="fa-brands fa-instagram"></i></a>
+ <a href="https://www.facebook.com/ekungomi.aminat" ><i class="fa-brands fa-facebook"></i></a>
+ <a href="https://www.twitter.com//AminatEkungomi" ><i class="fa-brands fa-twitter"></i></a>
+ <a href="#" ><i class="fa-brands fa-whatsapp"></i></a>
+ </div>
+ <hr>
+ <div class="container">
+ 
+ <div class="item item1">
+ <ul>
+ <li><button onclick="aboutUs()">About us</button></li>
+ <li><button onclick="contactUs()">Contact Us</button></li>
+ <li><button onclick="privacyPolicy()">Privacy Policy</button></li>
+ </ul>
+ </div>
+ 
+ <div class="item item2">
+ <p>MEENAH CAKES</p>
+ </div>
+ 
+ <div class="item item3">
+ <ul>
+ <li><button onclick="whitePaper()">White Paper</button></li>
+ <li><button onclick="termsAndConditions()">Terms & conditions</button></li>
+ </ul>
+ </div>
+ 
+ </div>
+ <div class="footer-copyright">
+ <p>Copyright &copy; 2020 - 2022 MEENAH CAKES.</p>
+ </div>
+ </footer>
+<br>
+<br>
+<br>
+</body>
+</html>
